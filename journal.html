@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Database - Journal</title>
+  </head>
+  <body>
+    <div id="app" class="container min-h-screen border mx-auto flex flex-col">
+      <!-- DIALOG für Notizen -->
+      <dialog
+        id="meinDialog"
+        class="sticky top-0 m-auto p-5 border rounded-3xl flex flex-col"
+      >
+        <p class="text-xl pb-3">Notiz eingeben:</p>
+        <form id="notizForm" class="flex flex-row pb-8">
+          <input
+            id="noteInput"
+            name="notizString"
+            type="text"
+            placeholder="Notiz eingeben"
+            class="border p-2 mr-4"
+          />
+          <button id="btnSearch" class="border p-2">Speichern</button>
+        </form>
+        <button id="btnCloseDialog" class="border p-2">Schließen</button>
+      </dialog>
+
+      <!-- NAV -->
+      <nav
+        class="z-1 p-5 bg-[#333] text-white sticky top-0 grid sm:grid-cols-2 grid-cols-1 overflow-hidden"
+      >
+        <div class="navLeft flex items-center">
+          <img
+            src="./public/img/logo.jpg"
+            alt="LOGO"
+            class="mr-5 h-[3em] w-[3em] object-contain"
+          />
+          <div>
+            <ul id="headerNavLinks" class="flex blockbuster-font">
+              <li class="p-2">
+                <a
+                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  href="index.html"
+                  title="Start"
+                  >Start</a
+                >
+              </li>
+              <li class="p-2">
+                <a
+                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  href="journal.html"
+                  title="Journal"
+                  >Watchlist</a
+                >
+              </li>
+
+              <li class="p-2">
+                <a
+                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  href="index.html"
+                  title="Kontakt"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navRight flex flex-col items-end space-y-2">
+          <div>
+            <!-- I guess not!? -->
+            <!-- <button class="border p-1">LOG IN</button>
+            <button class="border p-1">SIGN UP</button> -->
+          </div>
+        </div>
+      </nav>
+
+      <header>
+        <div class="sticky">
+          <nav class="border p-5">WATCHLIST</nav>
+        </div>
+      </header>
+      <main>
+        <section
+          id="journalFilme"
+          class="border p-5"
+          style="min-height: 1000px"
+        >
+          HIER kommen unsere Favoriten rein!
+        </section>
+      </main>
+      <!-- FOOTER -->
+      <footer id="footer" class="">
+        <nav
+          class="p-5 bg-[#333] text-white sticky bottom-0 grid sm:grid-cols-2 grid-cols-1"
+        >
+          <div class="navLeft flex items-center">
+            <img
+              src="./public/img/logo.jpg"
+              alt="LOGO"
+              class="mr-5 h-[3em] w-[3em] object-contain"
+            />
+            <div>
+              <ul id="headerNavLinks" class="flex">
+                <li class="p-2">
+                  <a href="index.html" title="Start">Start</a>
+                </li>
+                <li class="p-2">
+                  <a href="journal.html" title="Journal">Journal</a>
+                </li>
+                <li class="p-2">
+                  <a href="index.html" title="Kontakt">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navRight flex flex-col items-end space-y-2">
+            <div>(c) 2025</div>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/js/journal.js"></script>
+  </body>
+</html>

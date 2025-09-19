@@ -1,0 +1,61 @@
+/* importing tailwind */
+@import "tailwindcss";
+/* additional flipcard component styles */
+
+@import "./flipcard.css";
+
+/* DIALOG CSS */
+dialog {
+  display: none; /* standardmäßig verstecken */
+}
+dialog[open] {
+  display: flex; /* sichtbar wenn open */
+}
+.blockbuster-font {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+.font-text {
+  font-family: "Montserrat", sans-serif;
+}
+.show-dialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.33);
+  background-color: #fff;
+  font-family: sans-serif;
+  text-align: left;
+  max-width: 33vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+}
+
+/* Style the backdrop */
+.show-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show-founded-movies-dialog {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.33);
+  background-image: linear-gradient(135deg, #5cbac7, #dbca8e, #e9cb7f);
+  font-family: sans-serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  color: #333(0, 0, 0, 0.8);
+  max-width: 33vw;
+  width: 25rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -25%);
+  padding: 3rem;
+}
+
+/* Style the backdrop */
+.show-founded-movies-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
