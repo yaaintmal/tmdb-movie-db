@@ -59,3 +59,11 @@ dialog[open] {
 .show-founded-movies-dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* making cursor to look like a ch on link or better: button hover*/
+/* also those cool mal style shadown text depth ish thing unawatamean!? */
+button {
+  cursor: crosshair;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #333(0, 0, 0, 0.8);
+}

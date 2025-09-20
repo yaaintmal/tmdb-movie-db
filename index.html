@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.79" />
     <title>Movie Database</title>
   </head>
 
@@ -46,18 +46,22 @@
             <ul id="headerNavLinks" class="flex blockbuster-font">
               <li class="p-2">
                 <a
-                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  class="transition duration-300 hover:text-amber-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
                   href="index.html"
                   title="Start"
-                  >Start</a
+                  ><button class="rounded-2xl px-4 py-1 hover:bg-[#444]">
+                    Start
+                  </button></a
                 >
               </li>
               <li class="p-2">
                 <a
-                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  class="transition duration-300 hover:text-amber-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
                   href="journal.html"
                   title="Journal"
-                  >Watchlist</a
+                  ><button class="rounded-2xl px-4 py-1 hover:bg-[#444]">
+                    Watchlist
+                  </button></a
                 >
               </li>
               <!-- ######## Dummy: eingeführt zum testen -->
@@ -73,11 +77,13 @@
 
               <li class="p-2">
                 <a
-                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  class="transition duration-300 hover:text-amber-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
                   href="https://www.wbscodingschool.com/de/kontakt"
                   target="_blank"
                   title="Kontakt"
-                  >Kontakt</a
+                  ><button class="rounded-2xl px-4 py-1 hover:bg-[#444]">
+                    Kontakt
+                  </button></a
                 >
               </li>
             </ul>
@@ -100,15 +106,16 @@
           class="relative overflow-hidden min-h-[300px]"
         >
           <!-- Hintergrund-Video -->
-          <div class="absolute inset-0 w-full h-[full] overflow-hidden -z-20">
-            <iframe
-              class="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-275"
-              src="https://www.youtube.com/embed/CrgYEbIQkac?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="autoplay; fullscreen"
-              allowfullscreen
-            ></iframe>
+          <div
+            class="flex justify-end absolute inset-0 w-full h-[full] overflow-hidden -z-20 bg-[#000A0E]"
+          >
+            <div id="headerBanner">
+              <img
+                src="./public/img/header-1.png"
+                hzeight=""
+                alt="header banner"
+              />
+            </div>
           </div>
 
           <!-- Inhalt -->

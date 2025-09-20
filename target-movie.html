@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.79" />
     <title>Movie Database</title>
   </head>
 
@@ -18,7 +18,7 @@
 
       <!-- NAV -->
       <nav
-        class="z-1 p-5 bg-[#333] text-white sticky top-0 grid sm:grid-cols-2 grid-cols-1 overflow-hidden"
+        class="z-10 p-5 bg-[#333] text-white sticky top-0 grid sm:grid-cols-2 grid-cols-1 overflow-hidden"
       >
         <div class="navLeft flex items-center">
           <img
@@ -30,18 +30,22 @@
             <ul id="headerNavLinks" class="flex blockbuster-font">
               <li class="p-2">
                 <a
-                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  class="transition duration-300 hover:text-amber-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
                   href="index.html"
                   title="Start"
-                  >Start</a
+                  ><button class="rounded-2xl px-4 py-1 hover:bg-[#444]">
+                    Start
+                  </button></a
                 >
               </li>
               <li class="p-2">
                 <a
-                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  class="transition duration-300 hover:text-amber-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
                   href="journal.html"
                   title="Journal"
-                  >Watchlist</a
+                  ><button class="rounded-2xl px-4 py-1 hover:bg-[#444]">
+                    Watchlist
+                  </button></a
                 >
               </li>
               <!-- ######## Dummy: eingeführt zum testen -->
@@ -54,13 +58,16 @@
                 >
               </li> -->
               <!-- ######### End Dummy -->
+
               <li class="p-2">
                 <a
-                  class="transition duration-300 hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                  class="transition duration-300 hover:text-amber-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
                   href="https://www.wbscodingschool.com/de/kontakt"
                   target="_blank"
                   title="Kontakt"
-                  >Kontakt</a
+                  ><button class="rounded-2xl px-4 py-1 hover:bg-[#444]">
+                    Kontakt
+                  </button></a
                 >
               </li>
             </ul>
@@ -68,8 +75,9 @@
         </div>
         <div class="navRight flex flex-col items-end space-y-2">
           <div>
-            <button class="border p-1">LOG IN</button>
-            <button class="border p-1">SIGN UP</button>
+            <!-- do we get a login-system here? -->
+            <!-- <button class="border p-1">LOG IN</button>
+            <button class="border p-1">SIGN UP</button> -->
           </div>
         </div>
       </nav>

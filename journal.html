@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.79" />
     <title>Movie Database - Journal</title>
   </head>
   <body>
@@ -78,21 +78,23 @@
 
       <header>
         <div
-          class="relative z-10 flex-col justify-center p-l min-[height:300px]: max-[height:300px]: min-h-[300px]"
+          class="relative z-10 flex-col justify-center p-l min-[height:300px]: max-[height:300px]: min-h-[333px]"
         >
-          <section class="noborder p-5 bg-transparent bg-gradient-to-blue from-white via-amber-200 to-orange-200 bg-clip-text text-5xl"> WATCHLIST
-            <div class="absolute inset-0 w-full h-[full] overflow-hidden -z-20">
-              <iframe
-                class="absolute top-1/2 left-1/2 min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 scale-275"
-                src="https://www.youtube.com/embed/CrgYEbIQkac?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&modestbranding=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="autoplay; fullscreen"
-                allowfullscreen
-              ></iframe>
+          <section class="noborder p-5 text-gray-500 text-5xl">
+            Deine Watchlist
+            <div
+              class="flex justify-end absolute inset-0 w-full h-[full] overflow-hidden -z-20 bg-[#000A0E]"
+            >
+              <div id="headerBanner">
+                <img
+                  src="./public/img/header-1.png"
+                  hzeight=""
+                  alt="header banner"
+                />
+              </div>
             </div>
           </section>
-        </di min-[height:300px]: max-[height:300px]:v>
+        </div>
       </header>
       <main>
         <section
@@ -104,10 +106,8 @@
         </section>
       </main>
       <!-- FOOTER -->
-      <footer id="footer" class="">
-        <nav
-          class="p-5 bg-[#333] text-white sticky bottom-0 grid sm:grid-cols-2 grid-cols-1"
-        >
+      <footer id="footer" class="overflow-hidden sticky bottom-0">
+        <nav class="p-5 bg-[#333] text-white grid sm:grid-cols-2 grid-cols-1">
           <div class="navLeft flex items-center">
             <img
               src="./public/img/logo.jpg"
@@ -117,13 +117,13 @@
             <div>
               <ul id="headerNavLinks" class="flex">
                 <li class="p-2">
-                  <a href="index.html" title="Start">Start</a>
+                  <a href="index.html" title="Start">Kontakt</a>
                 </li>
                 <li class="p-2">
-                  <a href="journal.html" title="Journal">Journal</a>
+                  <a href="journal.html" title="Journal">Impressum</a>
                 </li>
                 <li class="p-2">
-                  <a href="index.html" title="Kontakt">Kontakt</a>
+                  <a href="index.html" title="Kontakt">Datenschutz</a>
                 </li>
               </ul>
             </div>
