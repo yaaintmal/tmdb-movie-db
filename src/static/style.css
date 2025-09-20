@@ -41,17 +41,17 @@ dialog[open] {
 .show-founded-movies-dialog {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.33);
-  background-image: linear-gradient(135deg, #5cbac7, #dbca8e, #e9cb7f);
+  background-image: linear-gradient(135deg, #129ff09a, #f010e57c, #0ecbec9a);
   font-family: sans-serif;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: left;
-  color: #333(0, 0, 0, 0.8);
+  color: #adadad(0, 0, 0, 0.8);
   max-width: 33vw;
-  width: 25rem;
+  font-size: larger;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -25%);
+  transform: translate(-50%, -50%);
   padding: 3rem;
 }
 
